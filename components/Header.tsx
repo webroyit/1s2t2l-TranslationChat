@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
 import DarkModeToggle from "./DarkModeToggle";
-import { Button } from "./ui/button";
+import UserButton from "./UserButton";
 
 function Header() {
   return (
@@ -11,6 +11,7 @@ function Header() {
 
             <div className="flex-1 flex items-center justify-end space-x-4">
               <DarkModeToggle />
+              <UserButton />
             </div>
         </nav>
     </header>
