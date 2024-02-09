@@ -6,6 +6,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/auth";
 import { MessagesSquareIcon } from "lucide-react";
 import Link from "next/link";
+import CreateChatButton from "./CreateChatButton";
 
 // async only works in server component
 async function Header() {
@@ -24,6 +25,7 @@ async function Header() {
                   >
                     <MessagesSquareIcon className="text-black dark:text-white" />
                   </Link>
+                  <CreateChatButton />
                 </>
               ) : (
                 <Link href={'/pricing'}>
